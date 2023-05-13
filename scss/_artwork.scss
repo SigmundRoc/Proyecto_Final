@@ -1,0 +1,103 @@
+/*artwork page--------------------------------------------*/
+/*main--------------------------------*/
+
+.main__artwork{
+    background-image: url(./../imagenes/img__ejemplo/n-i-x-e-u-ptt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.main__artwork h1{
+    margin: .5em 0;
+}
+
+.artwork__section p{
+    color: #fff;
+    margin: 1em 0;
+}
+
+.barSearch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barSearch input{
+    background-color: #444040;
+    height: 3em;
+    width: 100%;
+    
+    border-radius: 50px;
+    border: none;
+    margin: 1em 0;
+}
+
+/*diseño del button---------------------------------------------*/
+.barSearch button{
+    height: 2em;
+    width: 10em;
+    background-color: blueviolet;
+    border-radius: 50px;
+    border: solid 2px #371B58;
+}
+
+button:hover{
+    background-color: rgb(88, 26, 146);
+}
+
+/*article__part-2------------------------------------------------*/
+
+.artwork{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+}
+.info{
+    display: none;
+    position: absolute;
+}
+.artwork a{
+    width: 16.666%;
+    height: 15rem;
+    position: relative;
+    padding: 0;
+    
+}
+
+.artwork img{
+    width: 100%;
+    height: 100%; /*altura y el ancho al 100% para llenar el contenedor */
+    object-fit: cover;
+}
+/*hover transform-----------------------------*/
+.info{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+.artwork a:hover .info{
+    opacity: 1;
+    pointer-events: auto;
+}

@@ -1,0 +1,23 @@
+/*header----------------------------------------------------*/
+.header__container{
+    background-color: #371B58;
+    padding: 1em 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    .header__logo{
+        margin: 0;
+        font-size: 3em;
+    }
+    .header__logo a{
+        color: #B78400;
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: row;
+        .nav__link{
+            color: #B78400;
+            margin: 0 .5em;
+        }
+    }
+}

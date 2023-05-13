@@ -1,0 +1,174 @@
+/*index---------------------------------*/
+
+/*section__1--------------------------------------*/
+.part__1{
+    margin: 0;
+    padding: 0 15%;
+}
+
+/*grid---------------------------------*/
+
+.main__container{
+    margin: 1em 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content min-content;
+    grid-column-gap: 20px;
+    grid-template-areas:
+    "title img1 img2"
+    "text text text"
+    ;
+    .main__container .artwork{
+        grid-area: title
+    }
+    
+    .main__container .card{
+        grid-area: img1;
+    }
+    
+    .main__container .card__info{
+        grid-area: img2;
+    }
+    
+    .section__text-p{
+        grid-area: text;
+    }
+}
+
+/*estilos del grid---------------------------------------------------*/
+
+.main__container{
+    .artwork{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card__img{
+            border-radius: 50px;
+        }
+    }
+    .card__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        .card__info-img{
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.section__container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .section__text {
+        display: flex;
+        justify-content: center;
+        .section__text-p{
+            margin: auto;
+            padding: 10% 10% 10% 10%;
+        }
+    }
+}
+
+
+
+
+/*Part__2----------------------------------------------*/
+
+.part__2{
+    margin: 0;
+    padding: 0 15%;
+    
+    .section__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas: 
+        "title__2 ... img__3"
+        "img__4 img__5 img__3"
+        "img__4 about textArea"
+        ;
+    }
+    .container__title{
+        grid-area: title__2;
+    }
+    
+    .container__div1{
+        grid-area: img__4;
+    }
+    
+    .container__div2{
+        grid-area: img__5;
+    }
+    
+    .about{
+        grid-area:about;
+    }
+    
+    .container__div3{
+        grid-area: img__3;
+    }
+    
+    .description{
+        grid-area: textArea;
+    }
+
+    /*grid styles----------------------------------------*/
+    .section__container{
+        .container__div1{
+            align-items: center;
+            justify-items: center;
+        }
+        .container__div2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .div-img2{
+                width: 50%;
+                border-radius: 100px;
+            }
+        }
+        
+        .container__div3{
+            justify-content: center;
+            align-items: center;
+        }
+        .div-img{
+            border-radius: 50px;
+        }
+        .about{
+            align-self: start;
+            justify-self: end;
+        }
+        .nixeu{
+            margin: 2em 0em 0em 0em;
+        }
+        .description{
+            align-self: start;
+            h2{
+                margin: 1em 0 0 0;
+            }
+        }
+    }
+    .description__2{
+        display: flex;
+        justify-content: center;
+        border: 3px solid #371B58;
+        border-radius: 50px;
+        padding: 1rem;  margin: 2px;
+        
+    }
+}
